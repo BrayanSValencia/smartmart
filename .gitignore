@@ -1,0 +1,18 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+backend/env/
+
+# Ignore .env file inside smartmart
+backend/smartmart/.env
+
+# Ignore Django-specific files
+*.sqlite3
+*.log
+
+# Ignore OS and editor files
+.DS_Store
+.vscode/
+.idea/
