@@ -87,7 +87,7 @@ To run the system, you must install all required Python packages listed in `requ
 - Role-based permissions
 - Token blacklisting on logout
 
-![Authentication Diagram](Authentication_Diagram.png)
+![Authentication Diagram](images/Authentication_Diagram.png)
 
 ---
 
@@ -99,7 +99,7 @@ To run the system, you must install all required Python packages listed in `requ
 - External image URLs
 - Optimized RESTful endpoints
 
-![Product Catalog](Product_Catalog.png)
+![Product Catalog](images/Product_Catalog.png)
 
 ---
 
@@ -110,7 +110,7 @@ To run the system, you must install all required Python packages listed in `requ
 - Generates invoice IDs
 - Tracks subtotal, tax, payment status
 
-![Order Management](order_management.png)
+![Order Management](images/order_management.png)
 
 ---
 
@@ -155,7 +155,7 @@ Includes helper: `is_expired()`
 - `RegisterView`: validate, cache, send email
 - `VerifyEmailView`: finalize user creation
 
-![Registration Flow](registration_flow.png)
+![Registration Flow](images/registration_flow.png)
 
 ---
 
@@ -176,7 +176,7 @@ Includes helper: `is_expired()`
 - Blacklists access token
 - Invalidates refresh token
 
-![Logout Flow](logout_flow.png)
+![Logout Flow](images/logout_flow.png)
 
 ---
 
@@ -215,7 +215,7 @@ Includes helper: `is_expired()`
 | `/products/`           | GET  | —   | List products   |
 | `/products/{slug}/`    | GET  | —   | Retrieve        |
 
-![Product Diagram](product_diagram.png)
+![Product Diagram](images/product_diagram.png)
 
 ---
 
@@ -231,7 +231,7 @@ Includes helper: `is_expired()`
 | `/categories/{pk}/{slug}/activate/` | PATCH  | JWT  | Same                                  | Activate category + products |
 | `/categories/{pk}/{slug}/deactivate/` | PATCH | JWT  | Same                                  | Deactivate category + products |
 
-![Category Diagram](category_diagram.png)
+![Category Diagram](images/category_diagram.png)
 
 ---
 
@@ -245,7 +245,7 @@ Includes helper: `is_expired()`
 | `/users/`            | GET    | JWT  | IsSuperUser               | List all users            |
 | `/users/{pk}/`       | DELETE | JWT  | IsSuperUser               | Delete user               |
 
-![User Management](user_management.png)
+![User Management](images/user_management.png)
 
 ---
 
@@ -287,8 +287,8 @@ Includes helper: `is_expired()`
 - Role-based permissions
 - Token security & ePayco signature validation
 
-![Logic Diagram](logic_diagram.png)
-![Order Diagram](order_diagram.png)
+![Logic Diagram](images/logic_diagram.png)
+![Order Diagram](images/order_diagram.png)
 
 ---
 
@@ -345,7 +345,7 @@ Links product → order; tracks qty & price.
 - DRF `ModelSerializer` & `Serializer`
 - User, Product, Category, Checkout, Order serializers
 
-![Serialization Flow](serialization_flow.png)
+![Serialization Flow](images/serialization_flow.png)
 
 ---
 
@@ -357,7 +357,7 @@ Links product → order; tracks qty & price.
 - Auto slugs, soft deletes, timestamps
 - Unique invoice IDs & names
 
-![Relationships](model_relationships.png)
+![Relationships](images/model_relationships.png)
 
 ---
 
@@ -393,6 +393,6 @@ python manage.py runserver
 
 ## API Testing
 
-Use Postman collection (Deployed on  PythonAnywhere):
+Use Postman collection (Deployed on PythonAnywhere):
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/45628109-ffd10932-54ee-48b5-9dff-18215e2c444d?action=collection%2Ffork)
 
